@@ -7,8 +7,7 @@
     "lesson": "npx ts-node run.ts",
     "test": "npx hardhat test",
     "compile": "npx hardhat compile",
-    "deploy": "npx hardhat run scripts/deploy.ts",
-    "interact": "npx hardhat run scripts/interact.ts",
+    "run": "npx hardhat run",
     "node": "npx hardhat node",
     "console": "npx hardhat console",
     "clean": "npx hardhat clean"
