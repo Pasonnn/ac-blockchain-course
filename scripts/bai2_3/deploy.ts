@@ -21,10 +21,6 @@ async function main() {
   console.log(`🔍 Verified greeting: "${greeting}"`);
 
   console.log("\n🎉 Deployment completed successfully!");
-  console.log("\n📋 Next steps:");
-  console.log("1. Run tests: npx hardhat test");
-  console.log("2. Start local node: npx hardhat node");
-  console.log("3. Interact with contract: npx hardhat console");
 }
 
 // We recommend this pattern to be able to use async/await everywhere
