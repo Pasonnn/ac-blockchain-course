@@ -4,11 +4,10 @@
   "description": "Welcome! This repo is designed for final-year students learning blockchain.",
   "main": "index.js",
   "scripts": {
-    "lesson": "npx ts-node run.ts",
     "test": "npx hardhat test",
     "compile": "npx hardhat compile",
     "run": "npx hardhat run",
-    "node": "npx hardhat node",
+    "node": "npx hardhat node --verbose",
     "console": "npx hardhat console",
     "clean": "npx hardhat clean"
   },
