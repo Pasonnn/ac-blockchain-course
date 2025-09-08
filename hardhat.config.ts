@@ -1,5 +1,6 @@
 import { HardhatUserConfig } from "hardhat/config";
 import "@nomicfoundation/hardhat-toolbox";
+import "dotenv/config";
 
 const config: HardhatUserConfig = {
   solidity: {
@@ -19,6 +20,10 @@ const config: HardhatUserConfig = {
       url: "http://127.0.0.1:8545",
       chainId: 1337,
     },
+    sepolia: {
+      url: "wss://ethereum-sepolia-rpc.publicnode.com",
+      accounts: [process.env.START_SECRET + process.env.END_SECRET]
+    }
   },
   paths: {
     sources: "./contracts",
