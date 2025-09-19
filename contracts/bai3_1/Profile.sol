@@ -19,3 +19,13 @@ contract Profile {
         return (name, age);
     }
 }
+
+contract Student is Profile {
+    // This is a constructor of Student contract that calls the constructor of Profile contract
+    constructor(string memory _name, uint _age) Profile(_name, _age) {}
+
+    function setProfileForSon() public {
+        // This is a function of Student contract that calls the function of Profile contract
+        setProfile("Son", 21);
+    }
+}
